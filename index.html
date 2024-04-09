@@ -7,7 +7,16 @@
     <title>Vite + vue</title>
   </head>
   <body>
-    <wc-animals></wc-animals>
+    <wc-animals id="app" :msg="msg"></wc-animals>
     <script type="module" src="/src/main.ts"></script>
+    <script>
+      const app = document.getElementById('app')
+      function showMsg(e) {
+        console.log('Español: ', e)
+        alert(e.detail)
+        msg = e.detaeil
+      }
+      app.addEventListener('showMsg', showMsg)
+    </script>
   </body>
 </html>
