@@ -11,12 +11,14 @@
     <script type="module" src="/src/main.ts"></script>
     <script>
       const app = document.getElementById('app')
+      app.addEventListener('showMsg', showMsg)
+
       function showMsg(e) {
         console.log('Español: ', e)
         alert(e.detail)
-        msg = e.detaeil
+        msg = e.detail // Actualizamos el valor de msg con el detalle del evento
+        app.setAttribute('msg', msg) // Actualizamos el val
       }
-      app.addEventListener('showMsg', showMsg)
     </script>
   </body>
 </html>

@@ -1,6 +1,7 @@
 {
   "name": "web-component-prueba",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Prueba de web component con carga de plugins con vue 3",
   "private": true,
   "type": "module",
   "scripts": {
